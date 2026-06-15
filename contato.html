@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Fonte que peguei do gooogle fonts-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+
+            <div>
+                <img src="imagens/logo-YE.png" alt="" class="logo">
+            </div>
+            <!-- Fim logo -->
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="sobre.html">Sobre mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html" class="selecionado">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Fim Menu -->
+            <button id="tema">Alterar tema para Claro</button>
+        </div>
+        <!-- Fim Interface -->
+
+    </header>
+
+    <section id="contato">
+
+    <h1>Contato</h1>
+
+    <form id="formularioContato">
+
+        <label for="nome">Nome</label> 
+        <input type="text" id="nome"> <!--Campo para inserir nome-->
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email"> <!--Campo para inserir email-->
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" rows="6"></textarea> <!--Campo para inserir uma mensagem-->
+
+        <button type="submit">Enviar</button> <!--Botão para enviar a mensagem-->
+
+    </form>
+<!-- fim Formulario -->
+</section>
+<script src="scriptPagContato.js"></script>
+<script src="alterarTema.js"></script>
+</body>
+
+</html>
