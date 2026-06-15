@@ -6,16 +6,16 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #555;
-    height: 100vh;
+    font-family: 'Poppins', sans-serif; /* alterando a fonte de todo o site */
+    background-color: #555; 
+    height: 100vh; /* para os elementos se ajustarem ao tamanho da tela */
     color: white;
 }
 .logo{
 width: 200px;
 }
 .selecionado{
-    transform: scale(1.5);
+    transform: scale(1.5); /* Para criar um efeito de zoom no menu que estiver selecionado */
     color: #1C73E6;
     text-shadow: 0px 2px 8px #1C73E6;
 }
@@ -46,7 +46,7 @@ header a{
     
 }
 header nav ul{
-    list-style-type: none;
+    list-style-type: none; /*Retira o disco que vem como padrão das listas*/
 }
 header nav ul li{
     display: inline-block;
@@ -55,7 +55,7 @@ header nav ul li{
 
 header a:hover{
     color: #1C73E6;
-    transform: scale(2);
+    transform: scale(2); 
     text-shadow: 0px 2px 8px #1C73E6;
 }
 #tema{
@@ -67,7 +67,7 @@ header a:hover{
 
     padding: 10px 20px;
 
-    cursor: pointer;
+    cursor: pointer; /* Ao passar o mouse encima, ele se transforma na mãozinha clicável*/
     transition: .3s;
 
     font-weight: bold;
@@ -121,7 +121,7 @@ main section{
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* faz com que os cards tenham uma pequena animação pra cima*/
 }
 #formacao{
     display: flex;
@@ -136,7 +136,7 @@ main section{
     font-size: 40px;
 }
 .card ul{
-    list-style-position: inside;
+    list-style-position: inside; /*Aqui serve só pra manter a lista dentro do card mesmo*/
 }
 .card ul li{
     font-size: 40px;
@@ -209,7 +209,7 @@ img{
     background-color: #155bb5;
 }
 /* ALTERANDO TEMA PARA CLARO */
-.claro{
+.claro{ /* Essa é a classe que foi criada apenas no css, mas no JS ela pode ser introduzia no body ao clicar no botão de troca de tema*/
     background-color: #f5f5f5;
     color: #222;
 }
@@ -224,8 +224,7 @@ img{
     color: #1C73E6;
 }
 
-.claro #formularioContato input,
-.claro #formularioContato textarea{
+.claro #formularioContato input, .claro #formularioContato textarea{
     border: 1px solid #ccc;
 }
 
